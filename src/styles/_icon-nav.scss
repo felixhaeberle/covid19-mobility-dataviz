@@ -1,0 +1,123 @@
+// Icon Navigation
+
+:root {
+  --icon-size: 6rem;
+}
+
+.icon-nav {
+  display: flex;
+  flex-direction: row;
+  gap: calc(var(--icon-size) * 0.25);
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: calc(var(--icon-size) / 2);
+  padding-bottom: calc(var(--icon-size) / 2);
+
+  .nav-item {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    background-repeat: no-repeat;
+    background-size: var(--icon-size) var(--icon-size);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  // Location
+  &.location {
+    .home {
+      background-image: url('/assets/ramsen/home.svg');
+      &:hover,
+      &.is-active {
+        background-image: url('/assets/ramsen/home-active.svg');
+      }
+    }
+    .outdoor {
+      background-image: url('/assets/ramsen/outdoor.svg');
+      &:hover,
+      &.is-active {
+        background-image: url('/assets/ramsen/outdoor-active.svg');
+      }
+    }
+    .school {
+      background-image: url('/assets/ramsen/school.svg');
+      &:hover,
+      &.is-active {
+        background-image: url('/assets/ramsen/school-active.svg');
+      }
+    }
+    .shopping {
+      background-image: url('/assets/ramsen/shopping.svg');
+      &:hover,
+      &.is-active {
+        background-image: url('/assets/ramsen/shopping-active.svg');
+      }
+    }
+    .work {
+      background-image: url('/assets/ramsen/work.svg');
+      &:hover,
+      &.is-active {
+        background-image: url('/assets/ramsen/work-active.svg');
+      }
+    }
+    .shirt {
+      background-image: url('/assets/ramsen/shirt.svg');
+      &:hover,
+      &.is-active {
+        background-image: url('/assets/ramsen/shirt-active.svg');
+      }
+    }
+  }
+
+  // Mobility
+  &.mobility {
+    .airplane {
+      background-image: url('/assets/ramsen/airplane.svg');
+      &:hover,
+      &.is-active {
+        background-image: url('/assets/ramsen/airplane-active.svg');
+      }
+    }
+    .car {
+      background-image: url('/assets/ramsen/car.svg');
+      &:hover,
+      &.is-active {
+        background-image: url('/assets/ramsen/car-active.svg');
+      }
+    }
+    .train {
+      background-image: url('/assets/ramsen/train.svg');
+      &:hover,
+      &.is-active {
+        background-image: url('/assets/ramsen/train-active.svg');
+      }
+    }
+    .walk {
+      background-image: url('/assets/ramsen/walk.svg');
+      &:hover,
+      &.is-active {
+        background-image: url('/assets/ramsen/walk-active.svg');
+      }
+    }
+  }
+}
+
+// Preload hover background images
+body::after{
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+  content:
+  url('/assets/ramsen/home-active.svg')
+  url('/assets/ramsen/outdoor-active.svg')
+  url('/assets/ramsen/school-active.svg')
+  url('/assets/ramsen/shopping-active.svg')
+  url('/assets/ramsen/work-active.svg')
+  url('/assets/ramsen/shirt-active.svg')
+  url('/assets/ramsen/airplane-active.svg')
+  url('/assets/ramsen/car-active.svg')
+  url('/assets/ramsen/train-active.svg')
+  url('/assets/ramsen/walk-active.svg');   // load images
+}
+
+
+

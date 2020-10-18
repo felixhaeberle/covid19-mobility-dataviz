@@ -1,0 +1,77 @@
+header {
+  background-color: var(--color-white);
+  background-image: url(/assets/img/start-back.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+
+  .fernsehturm {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+    background-image: url(/assets/img/fernsehturm.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+    width: 60px;
+  }
+
+  .auto {
+    position: absolute;
+    left: 46%;
+    top: 10%;
+    background-image: url(/assets/img/bike.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 150px;
+    transform: rotate(29deg);
+  }
+
+}
+
+.intro {
+  min-height: 800px;
+
+  &.start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-image: url(/assets/img/intro.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+
+    h1 {
+      position: relative;
+      top: 8rem;
+    }
+  }
+
+  h2 {
+    padding-block-start: 3rem;
+    margin-block-end: var(--margin-bottom-headline-2);
+  }
+}
+
+
+.intro p,
+.info p {
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.wrapper {
+  max-width: var(--max-width-page);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: var(--max-width-container);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}

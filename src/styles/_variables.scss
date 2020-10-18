@@ -1,0 +1,62 @@
+:root {
+  /* Typography */
+  --font-family: "Barlow", sans-serif;
+  --font-size-base: 16px;
+
+  /* Weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Headlines */
+  --headline-page: 6.25rem;
+  --headline-intro: 3.125rem;
+
+  /* Paragraphs */
+  --paragraph-medium: 1.25rem;
+  --paragraph-extra-large: 12.5rem;
+
+  /* Colors */
+  --color-blue-black: #192e53;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Layout */
+  --max-width-container: 1200px;
+  --max-width-page: 1440px;
+
+  /* Spacing */
+  --margin-bottom-headline-2: 2.5rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-blue-black);
+  background-color: var(--color-blue-black);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: var(--headline-page);
+  font-weight: var(--font-weight-semibold);
+}
+
+h2 {
+  font-size: var(--headline-intro);
+  font-weight: var(--font-weight-regular);
+}
+
+p {
+  font-size: var(--paragraph-medium);
+  color: var(--color-black);
+}
