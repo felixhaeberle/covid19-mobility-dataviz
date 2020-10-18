@@ -27,4 +27,4 @@ Ebenso interessant ist es auch zu beobachten ob und inwiefern sich der Besuch be
 
 Auch jetzt, mit deutlich gelockerten Auflagen bleibt Ungewissheit und Vorsicht unser ständiger Begleiter. Wirkt sich das auf unsere Gewohnheiten aus? Und wenn ja, in welchen Bereichen besonders? Der folgenden interaktiven Visualisierung liegt ein ausführlicher Google-User-Datensatz zugrunde der im einzelnen die Aufenthaltsorte: Parks, Arbeitsstätten, Supermärkte, Bahnhöfe, Geschäfte und Wohnstätten abbildet.
 
-<img width="716" alt="3" src="https://user-images.githubusercontent.com/34959078/96376132-6b142a80-117d-11eb-91ce-9a4e3569d088.png">
+<img width="714" alt="3" src="https://user-images.githubusercontent.com/34959078/96376251-102f0300-117e-11eb-8786-740e76f06cd7.png">
