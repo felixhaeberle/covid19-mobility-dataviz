@@ -101,6 +101,23 @@
       }
     }
   }
+
+  // Labels
+  &.location,
+  &.mobility {
+    div {
+      position: relative;
+      span {
+        padding: 0;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.8125rem;
+        font-weight: var(--font-weight-regular);
+      }
+    }
+  }
 }
 
 // Preload hover background images
