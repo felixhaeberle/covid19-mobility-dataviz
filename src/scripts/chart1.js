@@ -312,8 +312,7 @@ class Chart1 {
 
   click(e) {
     const pathClass = e.target.classList[1];
-
-    this.svg.selectAll("path").transition().duration(200).style("opacity", 1);
+    const navItem = document.getElementsByClassName("nav-item " + pathClass)[0];
 
     this.svg
       .select("." + pathClass)
@@ -324,6 +323,15 @@ class Chart1 {
       .duration(1500)
       .ease(d3.easeCubicInOut)
       .attr("stroke-dashoffset", 0);
+
+      if(navItem.classList.contains('is-active')){
+        navItem.classList.remove('is-active');
+        this.svg.select("." + pathClass).attr("class", pathClass);
+        this.svg.select("." + pathClass).transition().duration(200).style("opacity", 0);
+      } else {
+        navItem.classList.add('is-active');
+        this.svg.select("." + pathClass).attr("class", pathClass + " is-active");
+      }
   }
 
   exited() {
