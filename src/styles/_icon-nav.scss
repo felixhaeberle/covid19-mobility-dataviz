@@ -7,17 +7,18 @@
 .icon-nav {
   display: flex;
   flex-direction: row;
-  gap: calc(var(--icon-size) * 0.25);
   justify-content: flex-start;
   align-items: center;
-  padding-top: calc(var(--icon-size) / 2);
+  padding-top: calc(var(--icon-size) / 4);
   padding-bottom: calc(var(--icon-size) / 2);
+  margin-left: 7rem;
 
   .nav-item {
     width: var(--icon-size);
     height: var(--icon-size);
     background-repeat: no-repeat;
     background-size: var(--icon-size) var(--icon-size);
+    margin-right: calc(var(--icon-size) * 0.25);
 
     &:hover {
       cursor: pointer;
